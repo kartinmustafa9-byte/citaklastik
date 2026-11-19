@@ -2329,7 +2329,7 @@ body.editing .editbar #editbtn{background:var(--sos);border-color:var(--sos);col
     var sec=$('#cine'), cv=$('#c3d'), hero=$('.hero2'), pre=$('#pre3d'), root=document.documentElement; if(!sec||!cv||!hero) return;
     var reducedM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches, save=navigator.connection&&navigator.connection.saveData;
     var mobile=window.innerWidth<820||/Android|iPhone|iPad|iPod/i.test(navigator.userAgent), api=null, loading=false, vis={h:false,c:false}, ticking=false, ready=false, failed=false;
-    if(save||(navigator.deviceMemory&&navigator.deviceMemory<=1)){sec.classList.add('no3d');return}
+    if(navigator.deviceMemory&&navigator.deviceMemory<=1){sec.classList.add('no3d');return}
     var firstVisit=true; try{firstVisit=!sessionStorage.getItem('ls-intro')}catch(e){}
     var showPre=firstVisit&&!reducedM&&nameFromHash()==='ana'; if(showPre&&pre) pre.classList.add('on');
     function donePre(){ if(!pre) return; try{sessionStorage.setItem('ls-intro','1')}catch(e){} pre.classList.add('done'); setTimeout(function(){pre.classList.remove('on')},900) }
