@@ -1,7 +1,7 @@
 /* Çıtak Oto Lastik: çevrimdışı açılış için basit önbellek. Önce ağ, olmazsa son kayıtlı sayfa. */
-const V = 'citak-v1';
+const V = 'citak-v2';
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(V).then(c => c.addAll(['./', 'manifest.webmanifest', 'icon-192.png']).catch(() => {})).then(() => self.skipWaiting()));
+  e.waitUntil(caches.open(V).then(c => c.addAll(['./', 'manifest.webmanifest', 'icon-v2-192.png']).catch(() => {})).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim()));
