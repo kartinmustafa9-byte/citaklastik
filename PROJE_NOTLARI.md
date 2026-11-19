@@ -49,3 +49,9 @@ Son güncelleme: 19 Kasım 2026
 - Kendi alan adı (ör. citakotolastik.com). Ücretli, onay gerekiyor.
 - Yol Yardım QR etiketini yeni adresle güncellemek.
 - Ayrıntıları henüz verilmedi: hizmet bölgesi, tamir ve 2. el lastik detayları.
+
+## Konuşma kaydı
+Bu projenin tüm konuşması (124 mesaj, 19 Kasım 2026), tam metniyle Claude'daki sohbette duruyor:
+https://claude.ai/chat/c8effe4b-e616-4d3c-bffc-f777d7cdb09b
+
+Bilgisayara metin olarak indirmek için: Claude → Ayarlar → Gizlilik → **Verileri dışa aktar**. Tüm sohbetleri içeren bir dosya e-postayla gelir.
