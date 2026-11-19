@@ -45,6 +45,10 @@ Son güncelleme: 19 Kasım 2026
 - [ ] Google İşletme Profili aç (business.google.com): adres, telefon, site linki, kategori olarak "Lastikçi" ve "Yol yardım hizmeti".
 - [ ] Ana ekran kısayolunu silip yeniden ekle, yeni simge görünsün.
 
+## Bilinen sorun
+- Turkcell, Vodafone gibi operatörlerin mobil verisinde `.vercel.app` adresi açılmıyor ("Bağlantı sıfırlandı"). Wi-Fi'de açılıyor. Kalıcı çözüm: kendi alan adı (`citakotolastik.com` boşta, yıllık 12,03 $). Ücretsiz deneme seçeneği: GitHub Pages. Mustafa şimdilik böyle devam etmeye karar verdi (19 Kasım 2026).
+- Veri tasarrufu açık telefonlarda da 3D açılıyor. WebGL2 olmayan eski telefonlarda yedek görüntü çıkıyor, kısa ekranlarda lastik gizleniyor.
+
 ## İsteğe bağlı
 - Kendi alan adı (ör. citakotolastik.com). Ücretli, onay gerekiyor.
 - Yol Yardım QR etiketini yeni adresle güncellemek.
