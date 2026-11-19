@@ -519,11 +519,12 @@ body.lock{overflow:hidden}
 @media (min-width:701px){.sheet{display:none}}
 /* kayan şerit */
 .mq{overflow:hidden;margin-inline:calc(50% - 50vw);background:var(--hero);color:var(--hero-ink);padding:14px 0;border-block:2px solid var(--lane);transform:rotate(-1.2deg);margin-top:28px;margin-bottom:34px}
-.mqt{display:flex;gap:26px;width:max-content;animation:mq 110s linear infinite;align-items:center}
+.mqt{display:flex;gap:0;width:max-content;animation:mq 110s linear infinite;align-items:center;will-change:transform;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.mqt>*{margin-right:26px}
 .mq:hover .mqt{animation-play-state:paused}
 .mqt span{font-family:var(--display);font-weight:900;font-size:clamp(26px,4vw,40px);letter-spacing:.02em;white-space:nowrap}
-.mqt svg{width:26px;height:26px;color:var(--lane);flex:none;animation:spin 14s linear infinite}
-@keyframes mq{to{transform:translateX(-50%)}}
+.mqt svg{width:26px;height:26px;color:var(--lane);flex:none}
+@keyframes mq{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 /* imleç ışığı ve kelime kelime başlık */
 @media (hover:hover) and (pointer:fine){
   .prod,.wy,.sv,.kp,.mapcard{position:relative}
